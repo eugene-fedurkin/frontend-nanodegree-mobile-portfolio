@@ -1,33 +1,31 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-  
-  <style> 
-    html {
-      font-size: 100%;
-      overflow-y: scroll;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: none;
+<head>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -box-sizing: border-box;
     }
-    body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
-    body, button, input, select, textarea {
-      font-family: 'Open Sans',
-      sans-serif;
-      color: #333;
+    body { font-family: "Trebuchet MS", Helvetica, sans-serif; }
+    input { font-size: 18px; }
+    .centered { text-align: center; }
+    #pizzaSize { font-weight: 800; }
+    .mover {
+      position: fixed;
+      width: 256px;
+      z-index: -1;
     }
-    ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
-    img { border: 0; max-width: 100%; }
-    header, footer, .container { max-width: 45em; margin: 0 auto; }
-    header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
-    header p span { font-size: 0.8em; font-weight: normal;}
-    .content { padding: 1em 1em; }
-    .content li { list-style-type: none; font-size: 1.1em;}
-    li img { float:left; padding-right: 1em; }
-    li p { font-size: 0.9em; font-style: italic; }
-    footer { padding: 0 0.5em; }
-    footer span { float: right; font-style: italic; }
-  </style> 
-
+    .randomPizzaContainer {
+      float: left;
+      display: flex;
+    }
+    .randomPizzaContainer:after {
+      content: "";
+      display: table;
+      clear:both;
+    }
+  </style>
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 </head>
 
@@ -163,7 +161,7 @@
     </div>
     <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2014 Udacity</div>
   </div>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="text/javascript" src="js/main.js"></script>  
 </body>
 
